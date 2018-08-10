@@ -1,0 +1,10 @@
+version: '2'
+services:
+  screenly:
+    image: screenly/ose-dev-server
+    expose:
+      - "80"
+  dat-seeder:
+    image: brettneese/dat-seeder
+    ports:
+      - "8080:80"
